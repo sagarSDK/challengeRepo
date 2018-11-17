@@ -17,7 +17,10 @@ class BankAccount implements IfaceBankAccount
 
     public function deposit(Money $amount)
     {
-        //implement this method        
+        $bal = $this->balance();
+         $amt = $amount->value();
+         $tbal = $bal + $amt;
+        return $this->balance = $tbal;        
          
 
     }
